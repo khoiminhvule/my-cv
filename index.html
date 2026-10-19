@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vũ Lê Minh Khôi - Resume</title>
+<style>
+  @page { 
+    size: A4; 
+    margin: 14mm 16mm 14mm 16mm; 
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body { 
+    font-family: "Times New Roman", Times, Georgia, serif; 
+    color: #000; 
+    background: #f4f6f8; 
+    font-size: 13px; 
+    line-height: 1.42; 
+    margin: 0;
+    padding: 20px 10px;
+  }
+  /* Nút thao tác nhanh trên web */
+  .top-bar {
+    max-width: 780px;
+    margin: 0 auto 16px auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-print {
+    background-color: #0969da;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    transition: background-color 0.2s;
+  }
+  .btn-print:hover {
+    background-color: #0856b3;
+  }
+  .paper {
+    background: #ffffff;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 38px 46px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border-radius: 4px;
+  }
+  h1 { 
+    text-align: center; 
+    font-size: 24px; 
+    margin: 0 0 4px; 
+    letter-spacing: 1.2px; 
+    font-weight: bold;
+  }
+  .contact { 
+    text-align: center; 
+    font-size: 13px;
+    margin-bottom: 12px; 
+  }
+  .contact a { 
+    color: #000; 
+    text-decoration: none; 
+  }
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  h2 { 
+    font-size: 14px; 
+    text-transform: uppercase; 
+    border-bottom: 1.5px solid #000; 
+    margin: 14px 0 8px; 
+    padding-bottom: 2px; 
+    letter-spacing: 0.5px;
+  }
+  .row { 
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 13px;
+  }
+  .title { 
+    font-weight: bold; 
+  }
+  .desc { 
+    font-style: italic; 
+    margin-bottom: 3px; 
+    font-size: 12.5px;
+  }
+  ul { 
+    margin: 2px 0 10px; 
+    padding-left: 18px; 
+  }
+  li { 
+    margin-bottom: 3px; 
+    text-align: justify;
+  }
+
+  @media print {
+    body {
+      background: #fff;
+      padding: 0;
+    }
+    .top-bar {
+      display: none !important;
+    }
+    .paper {
+      box-shadow: none;
+      padding: 0;
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .paper {
+      padding: 24px 18px;
+    }
+    .row {
+      flex-direction: column;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <button class="btn-print" onclick="window.print()">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+    In / Lưu dạng PDF
+  </button>
+</div>
+
+<div class="paper">
+  <h1>VŨ LÊ MINH KHÔI</h1>
+  <div class="contact">
+    Hanoi, Vietnam • 0945 600 838 • <a href="mailto:Khoi.vlm224319@sis.hust.edu.vn">Khoi.vlm224319@sis.hust.edu.vn</a> • <a href="https://github.com/communitybundle" target="_blank">github.com/communitybundle</a>
+  </div>
+
+  <h2>Summary</h2>
+  <p style="margin:0; text-align: justify;">Digital Media and Multimedia Technology student at HUST seeking a Front-end 3D/XR Internship. Foundation in JavaScript (ES6+), HTML5/CSS3 and REST API integration, with coursework exposure to 3D rendering through Three.js and OpenGL. Strong C++ and problem-solving background from network simulation and Python data projects. Eager to grow in interactive 3D and XR web development.</p>
+
+  <h2>Education</h2>
+  <div class="row">
+    <span><span class="title">Hanoi University of Science and Technology (HUST)</span> — Bachelor of Digital Media and Multimedia Technology</span>
+    <span>2022 – 2026</span>
+  </div>
+  <div style="margin-top: 3px;"><b>Relevant Coursework:</b> Computer Graphics (Three.js, OpenGL fundamentals)</div>
+
+  <h2>Projects</h2>
+
+  <div class="row">
+    <span class="title">BookApp</span>
+    <span></span>
+  </div>
+  <div class="desc">Web app for browsing books and reading chapters • HTML, CSS, JavaScript</div>
+  <ul>
+    <li>Developed front-end interfaces and integrated REST APIs to load book and chapter data dynamically.</li>
+    <li>Implemented interactive UI features with async/await and DOM manipulation.</li>
+  </ul>
+
+  <div class="row">
+    <span class="title">Spanning Tree Protocol (STP) Simulator</span>
+    <span></span>
+  </div>
+  <div class="desc">Network simulator that prevents switching loops in bridged topologies • C++, Computer Networks</div>
+  <ul>
+    <li>Built a C++ simulation of STP that elects the Root Bridge and assigns Root Port (RP), Designated Port (DP), and Non-Designated Port (NP) roles.</li>
+    <li>Modeled bridge communication and network topology with STL <code>vector</code> and <code>map</code>.</li>
+  </ul>
+
+  <div class="row">
+    <span class="title">Optimizing Electricity Systems in Data Center</span>
+    <span>12/2025 – 04/2026</span>
+  </div>
+  <div class="desc">Research project on electricity-aware workload scheduling for data centers • Python, Data Analysis</div>
+  <ul>
+    <li>Analyzed 66,971 jobs, 49,747 batches, and 138 days of workload data and compared 5 probability distributions to model job inter-arrival times.</li>
+    <li>Built Python pipelines for data preprocessing, statistical modeling, and scheduling experiments.</li>
+  </ul>
+
+  <h2>Skills &amp; Languages</h2>
+  <div style="margin-bottom: 3px;"><b>Front-end:</b> HTML5, CSS3, JavaScript (ES6+), DOM Manipulation, Async/Await, REST API Integration, JSON, Git/GitHub</div>
+  <div style="margin-bottom: 3px;"><b>3D Graphics (basic):</b> Three.js, OpenGL</div>
+  <div style="margin-bottom: 3px;"><b>Programming:</b> C++, C, Python, C#</div>
+  <div><b>Languages:</b> Vietnamese (native); English (IELTS 6.5, strongest in Reading and Listening)</div>
+</div>
+
+</body>
+</html>
